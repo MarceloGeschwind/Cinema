@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>História do Cinema</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header>
+    <p>Cinema</p>
+</header>
+
+<nav>
+    <a href="#inicio">Introdução</a>
+    <a href="#historia">História</a>
+    <a href="#filmes favoritos">Filmes Favoritos</a>
+
+</nav>
+
+<main>
+
+<section id="inicio">
+    <h2>O que é o cinema?🎥</h2>
+    <p>Cinema é um expressão artística que combina imagens em movimento, sons e frequentemente elementos narrativos para transmitir uma mensagem em forma de vídeo. 
+        Ele combina elementos de diversas áreas com arte, literatura, música etc.</p>
+</section>
+
+<section id="história">
+    <h2>História do Cinema</h2>
+    <p>O cinema começou com dois irmãos, os Irmãos Lumiere (Auguste e Louis).</p>
+    <img src="imagem/IrmãosLumiere.jpg">
+</section>
+
+<br>
+<iframe width="500" height="315"
+    src="https://www.youtube.com/watch?v=WWvCkwfLICk"
+    title="Pokérap"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
+<br>
+
+<section id="cards">
+    <h2>Pokémons favoritos</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="Imagem/pikachu.png">
+            <h3>Pikachu</h3>
+            <button class="like">🤍</button>
+        </div>
+
+        <div class="card">
+            <img src="Imagem/charmander.png">
+            <h3>Charmander</h3>
+            <button class="like">🤍</button>
+        </div>
+        <div class="card">
+            <img src="Imagem/Fuecoco2.png">
+            <h3>Fuecoco</h3>
+            <button class="like">🤍</button>
+        </div>
+        <div class="card">
+            <img src="Imagem/piplup.png">
+            <h3>Piplup</h3>
+            <button class="like">🤍</button>
+        </div>
+        <div class="card">
+            <img src="Imagem/froakie2.png">
+            <h3>Froakie</h3>
+            <button class="like">🤍</button>
+        </div>
+        <div class="card">
+            <img src="Imagem/Treecko2.png">
+            <h3>Treecko</h3>
+            <button class="like">🤍</button>
+        </div>
+
+    </div>
+
+</section>
+<br>
+<section id="lista">
+<h2>Lista ordenada dos quais nós mais gostamos</h2>
+
+    <ol>
+        <li>Charmander</li>
+        <li>Froakie</li>
+        <li>Pikachu</li>
+        <li>Treecko</li>
+        <li>Fuecoco</li>
+        <li>Piplup</li>
+    </ol>
+</section>
+
+<section id="tabela">
+    <h2>Geração de Cada Um</h2>
+
+    <table>
+        <tr>
+            <th>Pokémon</th>
+            <th>Geração</th>
+        </tr>
+        <tr>
+            <td>Charmander</td>
+            <td>Primeira(1ª)</td>
+        </tr>
+        <tr>
+            <td>Pikachu</td>
+            <td>Primeira(1ª)</td>
+        </tr>
+        <tr>
+            <td>Trecko</td>
+            <td>Terceira(3ª)</td>
+        </tr>
+        <tr>
+            <td>Piplup</td>
+            <td>Quarta(4ª)</td>
+        </tr>
+        <tr>
+            <td>Froakie</td>
+            <td>Sexta(6ª)</td>
+        </tr>
+        <tr>
+            <td>Fuecoco</td>
+            <td>Nona(9ª)</td>
+        </tr>
+    </table>
+</section>
+
+</main>
+<br>
+
+<a href="futuro formulário"> Futuro Formulário. </a>
+
+
+<footer>
+    <p>Projeto escolar 💻</p>
+</footer>
+
+<script>
+// 🌙 Dark mode automático por horário
+const hour = new Date().getHours();
+
+if (hour >= 10 || hour < 6) {
+    document.body.classList.add("dark");
+}
+
+// ❤️ Botão de like
+document.querySelectorAll(".like").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        btn.innerText = btn.classList.contains("active") ? "❤️" : "🤍";
+    });
+});
+</script>
+
+</body>
+</html>
