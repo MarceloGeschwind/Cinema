@@ -1,26 +1,46 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #e4e1e1;
-    color: #060a13;
-}
-
-/* 🌙 modo escuro */
-body.dark {
-    background-color: rgb(11, 13, 24);
-    color: #f1f5f9;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 15px;
 }
 
 /* Header */
 header {
-    background: linear-gradient(90deg, #90ccfe, #c3e3ff, #90ccfe);
+    background: linear-gradient(90deg, #5252523c, #5252523c, #5252523c);
     text-align: center;
-    padding: 15px;
+    font-size: 50px;
+    padding: 20px;
+    color: #ff0707; 
+    font-weight: 200px
+}
+
+#c { 
+    display: flex;
+
+}
+
+.c img:hover{
+    transform: scale(1.05)
+}
+
+
+#d {
+    max-width: 300px;
+}
+
+.card img:hover{
+    transform: scale(1.05)
+}
+
+img {
+    transition: transform 0.3s ease;
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(90deg, #083747, #0a404c, #083747);
+    background: linear-gradient(90deg, #000000, #000000, #ffffff);
     text-align: center;
     padding: 1px;
     color: white;
@@ -30,11 +50,11 @@ footer {
 
 /* Menu */
 nav {
-    background: linear-gradient(90deg, #083747, #0a404c, #083747);
+    background: linear-gradient(90deg, #5d5c5c, #5d5c5c, #5d5c5c);
     display: flex;
     justify-content: center;
-    gap: 15px;
-    padding: 10px;
+    gap: 20px;
+    padding: 15px;
 }
 
 nav a {
@@ -44,7 +64,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #38bdf8; /* efeito ao passar o mouse */
+    color: lightgray; /* efeito ao passar o mouse */
+    
 }
 
 /* Conteúdo */
@@ -60,11 +81,12 @@ main {
     width: 150%;
 }
 
+
+
 .card {
-    background-color: #334869;
+    background-color: #ffffff;
     color: white;
     border-radius: 15px;
-    overflow: hidden;
     padding-bottom: 10px;
 }
 
@@ -73,21 +95,10 @@ h3 {
 }
 
 .card img {
-    width: 100%;
+    width: 300px;
+    height: 425px;
 }
 
-.like {
-    margin: 10px;
-    padding: 8px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-/* lista */
-ol {
-    margin-top: 10px;
-}
 
 /* vídeo */
 iframe {

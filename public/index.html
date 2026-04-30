@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>História do Cinema</title>
+<title>Filme</title>
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
 
 <header>
-    <p>Cinema</p>
+    <p>Filme</p>
 </header>
 
 <nav>
@@ -21,19 +21,18 @@
 <main>
 
 <section id="inicio">
-    <h2>O que é o cinema?🎥</h2>
-    <p>Cinema é um expressão artística que combina imagens em movimento, sons e frequentemente elementos narrativos para transmitir uma mensagem em forma de vídeo. 
-        Ele combina elementos de diversas áreas com arte, literatura, música etc.</p>
+    <h2>O que é o filme?📽️</h2>
+    <p>O filme é uma obra audiovisual que tem o objetivo de entreter os espectatores. Um filme possui elementos essenciais em sua composição:
+    </p>
+    <ul>
+        <li>Roteiro: Define os acontecimentos, falas e a história</li>
+        <li>Som: Dá emoção</li>
+        <li>Direção: Orienta o elenco nas cenas, ajusta as cenas(posição da câmera, luminosidade), garantindo que a ideia central seja transmitida.</li>
+    </ul>
 </section>
 
-<section id="história">
-    <h2>História do Cinema</h2>
-    <p>O cinema começou com dois irmãos, os Irmãos Lumiere (Auguste e Louis), com seu aparelho apelidado de Cinematógrafo. Em 1895, o Cinematógrafo foi criado a partir de uma outra invenção o cinetoscópio 
-        que era um equipamento que rodava filmes assistidos individualmente, enquanto o Cinematógrafo era um projetor que era possivel a visualização de várias pessoas ao mesmo tempo. 
-        Esse aparelho era um maquina portátil que possuia funções como filmar e projetar. Diferentes de outras máquinas da época que tinha funções exclusivas
-    </p>
-    <img src="imagem/IrmãosLumiere.jpg">
-</section>
+
+
 
 <br>
 <iframe width="500" height="315"
@@ -44,59 +43,38 @@
 </iframe>
 <br>
 
-<section id="cards">
-    <h2>Pokémons favoritos</h2>
+<section id="filmes favoritos">
+    <h2>Meu top 5 Filmes</h2>
 
     <div class="container">
 
         <div class="card">
-            <img src="Imagem/pikachu.png">
-            <h3>Pikachu</h3>
-            <button class="like">🤍</button>
+            <img src="Imagem/f1.jpg">
         </div>
 
         <div class="card">
-            <img src="Imagem/charmander.png">
-            <h3>Charmander</h3>
-            <button class="like">🤍</button>
+            <img src="Imagem/spider.png">
         </div>
+
         <div class="card">
-            <img src="Imagem/Fuecoco2.png">
-            <h3>Fuecoco</h3>
-            <button class="like">🤍</button>
+            <img src="Imagem/ult.jpg">
         </div>
+
         <div class="card">
-            <img src="Imagem/piplup.png">
-            <h3>Piplup</h3>
-            <button class="like">🤍</button>
+            <img src="Imagem/iron3.jpg">
         </div>
+
         <div class="card">
-            <img src="Imagem/froakie2.png">
-            <h3>Froakie</h3>
-            <button class="like">🤍</button>
-        </div>
-        <div class="card">
-            <img src="Imagem/Treecko2.png">
-            <h3>Treecko</h3>
-            <button class="like">🤍</button>
+            <img src="Imagem/inf.jpg">
         </div>
 
     </div>
 
+
+
 </section>
 <br>
-<section id="lista">
-<h2>Lista ordenada dos quais nós mais gostamos</h2>
 
-    <ol>
-        <li>Charmander</li>
-        <li>Froakie</li>
-        <li>Pikachu</li>
-        <li>Treecko</li>
-        <li>Fuecoco</li>
-        <li>Piplup</li>
-    </ol>
-</section>
 
 <section id="tabela">
     <h2>Geração de Cada Um</h2>
@@ -143,22 +121,6 @@
     <p>Projeto escolar 💻</p>
 </footer>
 
-<script>
-// 🌙 Dark mode automático por horário
-const hour = new Date().getHours();
-
-if (hour >= 10 || hour < 6) {
-    document.body.classList.add("dark");
-}
-
-// ❤️ Botão de like
-document.querySelectorAll(".like").forEach(btn => {
-    btn.addEventListener("click", () => {
-        btn.classList.toggle("active");
-        btn.innerText = btn.classList.contains("active") ? "❤️" : "🤍";
-    });
-});
-</script>
 
 </body>
 </html>
