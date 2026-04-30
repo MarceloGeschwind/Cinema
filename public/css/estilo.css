@@ -6,7 +6,6 @@ body {
     font-size: 15px;
 }
 
-/* Header */
 header {
     background: linear-gradient(90deg, #5252523c, #5252523c, #5252523c);
     text-align: center;
@@ -25,6 +24,9 @@ header {
     transform: scale(1.05)
 }
 
+h2 {
+    margin-left: 610px;
+}
 
 #d {
     max-width: 300px;
@@ -38,7 +40,6 @@ img {
     transition: transform 0.3s ease;
 }
 
-/* Footer */
 footer {
     background: linear-gradient(90deg, #000000, #000000, #ffffff);
     text-align: center;
@@ -48,7 +49,6 @@ footer {
     font-weight: bold;
 }
 
-/* Menu */
 nav {
     background: linear-gradient(90deg, #5d5c5c, #5d5c5c, #5d5c5c);
     display: flex;
@@ -64,24 +64,20 @@ nav a {
 }
 
 nav a:hover {
-    color: lightgray; /* efeito ao passar o mouse */
+    color: lightgray; 
     
 }
 
-/* Conteúdo */
 main {
     padding: 15px;
 }
 
-/* Cards */
 .container {
     display: flex;
-    flex-direction: column; /* celular primeiro */
+    flex-direction: column; 
     gap: 20px;
     width: 150%;
 }
-
-
 
 .card {
     background-color: #ffffff;
@@ -99,15 +95,12 @@ h3 {
     height: 425px;
 }
 
-
-/* vídeo */
 iframe {
     width: 100%;
     max-width: 600px;
     border-radius: 10px;
 }
 
-/* Tabela */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -124,7 +117,6 @@ th {
     background-color: #334869;
 }
 
-/* 📱 TABLET */
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -132,11 +124,10 @@ th {
     }
 }
 
-/* 💻 DESKTOP */
 @media (min-width: 1024px) {
     main {
         max-width: 900px;
         margin: auto;
-        margin-left: 200px;
+        margin-left: 250px;
     }
 }
