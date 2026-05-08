@@ -3,8 +3,38 @@ body {
     margin: 0;
     background-color: #ffffff;
     color: #000000;
-    font-size: 15px;
+    font-size: 23px;
 }
+
+.h {
+    
+}
+
+#elem {
+    width: 800px;
+    height: 475px;
+}
+
+#elem img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    flex; gap: 20px; align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.column {
+    max-width: 500px;
+    flex: 1;
+}
+
 
 header {
     background: linear-gradient(90deg, #5252523c, #5252523c, #5252523c);
@@ -29,7 +59,7 @@ h2 {
 }
 
 #d {
-    max-width: 300px;
+    max-width: 200px;
 }
 
 .card img:hover{
@@ -128,6 +158,6 @@ th {
     main {
         max-width: 900px;
         margin: auto;
-        margin-left: 250px;
+        margin-left: 225px;
     }
 }
