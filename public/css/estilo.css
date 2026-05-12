@@ -4,6 +4,9 @@ body {
     background-color: #ffffff;
     color: #000000;
     font-size: 23px;
+    justify-content: center;
+    justify-items: center;
+
 }
 
 header {
@@ -12,7 +15,27 @@ header {
     font-size: 50px;
     padding: 20px;
     color: #ff0707; 
-    font-weight: 200px
+    font-weight: 200px;
+    width: 100%; 
+}
+
+nav {
+    background: linear-gradient(90deg, #5d5c5c, #5d5c5c, #5d5c5c);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: lightgray; 
 }
 
 #elem {
@@ -80,31 +103,7 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-#form {
-
-
-    gap: 10px;
-}
-
-
-nav {
-    background: linear-gradient(90deg, #5d5c5c, #5d5c5c, #5d5c5c);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: lightgray; 
+    width: 100%;
 }
 
 main {
@@ -130,17 +129,12 @@ main {
     align-items: center;
     justify-content: center;
     display: flex;
-    al
 }
 
 #text2 {
     align-items: center;
     justify-content: center;
     display: flex;
-}
-
-h3 {
-    margin-left: 15px;
 }
 
 .card img {
@@ -164,25 +158,36 @@ iframe {
 
 .ving {
     display: flex;
-
     margin-left: 220px;
     margin-right: 220px;
 }
 
+#bodyform {
+    background-color: darkred;
+}
+
 .titform {
-    background: linear-gradient(90deg, #5252523c, #5252523c, #5252523c);
+    background-color: #808080;
+    background: linear-gradient(90deg, #808080, #808080, #808080);
     text-align: center;
-    font-size: 25px;
     padding: 10px;
     color: #ff0707; 
-    font-weight: 100px
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 #form {
+    background-color: rgb(255, 255, 255);
     justify-items: center;
     text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(108, 6, 6);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    gap: 10px;
 }
-
 
 @media (min-width: 1024px) {
     main {
